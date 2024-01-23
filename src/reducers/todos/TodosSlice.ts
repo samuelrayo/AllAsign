@@ -17,7 +17,7 @@ const initialState : typeState = {
     ] 
 }
 
-
+// @ts-expect-error In localStorage, the expected type should be unknown
 const saveInLocalStorage = (data: unknown) => {
     localStorage.setItem('todosListLS', JSON.stringify(data) )
 }
