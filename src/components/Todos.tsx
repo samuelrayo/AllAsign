@@ -10,7 +10,7 @@ import { useRef } from 'react'
 } */
 
 function Todos() {
-
+// @ts-expect-error In localStorage, the expected type should be unknown 
     const dataTodos = useSelector(state => state.todos)
     
     const data: TodosList = dataTodos.todosList
